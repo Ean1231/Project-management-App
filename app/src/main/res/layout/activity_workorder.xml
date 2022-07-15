@@ -1,0 +1,682 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".Workorder">
+
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--<androidx.cardview.widget.CardView-->
+<!--    android:id="@+id/card1"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_marginRight="30dp"-->
+<!--    android:layout_marginTop="30dp"-->
+<!--    android:layout_marginLeft="30dp"-->
+<!--    app:cardCornerRadius="8dp"-->
+<!--    android:clickable="true"-->
+<!--    android:layout_height="200dp">-->
+
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:orientation="vertical"-->
+
+<!--        android:layout_height="match_parent">-->
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:orientation="horizontal"-->
+<!--            android:layout_marginLeft="30dp"-->
+<!--            android:layout_marginTop="20dp"-->
+<!--            android:layout_marginRight="30dp"-->
+<!--            android:layout_height="wrap_content">-->
+
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:orientation="vertical"-->
+<!--                android:layout_height="wrap_content">-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/responsiblePerson"-->
+<!--                    android:textSize="24dp"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:text="Responsible person"-->
+<!--                    android:layout_height="wrap_content">-->
+
+<!--                </TextView>-->
+
+<!--              <TextView-->
+<!--                  android:id="@+id/center"-->
+<!--                  android:textSize="20dp"-->
+<!--                  android:layout_width="wrap_content"-->
+<!--                  android:text="Center"-->
+<!--                  android:layout_height="wrap_content">-->
+
+<!--              </TextView>-->
+<!--                <TextView-->
+<!--                    android:id="@+id/priority"-->
+<!--                    android:textSize="18dp"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:text="Priority"-->
+<!--                    android:layout_marginTop="9dp"-->
+<!--                    android:layout_height="wrap_content">-->
+
+<!--                </TextView>-->
+
+<!--            </LinearLayout>-->
+
+
+
+<!--            <RelativeLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent">-->
+
+<!--                <ImageView-->
+<!--                    android:layout_width="30dp"-->
+<!--                    android:layout_height="40dp"-->
+
+<!--                    android:layout_alignParentTop="true"-->
+<!--                    android:layout_alignParentEnd="true"-->
+
+<!--                    android:layout_marginEnd="10dp"-->
+<!--                    android:src="@drawable/downloadsww">-->
+
+<!--                </ImageView>-->
+
+<!--            </RelativeLayout>-->
+
+<!--        </LinearLayout>-->
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="292dp"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:layout_marginLeft="30dp"-->
+<!--            android:layout_marginTop="5dp"-->
+<!--            android:layout_marginRight="30dp"-->
+<!--            android:orientation="horizontal">-->
+
+<!--            &lt;!&ndash;            <TextView&ndash;&gt;-->
+<!--            &lt;!&ndash;                android:id="@+id/progress"&ndash;&gt;-->
+<!--            &lt;!&ndash;                android:layout_width="wrap_content"&ndash;&gt;-->
+<!--            &lt;!&ndash;                android:text="8"&ndash;&gt;-->
+<!--            &lt;!&ndash;                android:textSize="40dp"&ndash;&gt;-->
+<!--            &lt;!&ndash;                android:layout_height="wrap_content">&ndash;&gt;-->
+<!--            &lt;!&ndash;            </TextView>&ndash;&gt;-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:orientation="vertical">-->
+
+
+<!--                &lt;!&ndash;                <ImageView&ndash;&gt;-->
+<!--                &lt;!&ndash;                    android:layout_width="20dp"&ndash;&gt;-->
+<!--                &lt;!&ndash;                    android:layout_marginTop="4dp"&ndash;&gt;-->
+<!--                &lt;!&ndash;                    android:src="@drawable/downloadsww"&ndash;&gt;-->
+<!--                &lt;!&ndash;                    android:layout_height="14dp">&ndash;&gt;-->
+
+<!--                &lt;!&ndash;                </ImageView>&ndash;&gt;-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:id="@+id/type"-->
+<!--                    android:layout_marginTop="4dp"-->
+<!--                    android:text="Type"-->
+<!--                    android:textSize="18dp"></TextView>-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/status"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginTop="9dp"-->
+<!--                    android:textSize="18dp"-->
+<!--                    android:text="Status">-->
+
+<!--                </TextView>-->
+<!--            </LinearLayout>-->
+<!--            &lt;!&ndash;            <TextView&ndash;&gt;-->
+<!--            &lt;!&ndash;                android:layout_width="wrap_content"&ndash;&gt;-->
+<!--            &lt;!&ndash;                android:text="0 %"&ndash;&gt;-->
+<!--            &lt;!&ndash;                android:layout_marginTop="-4dp"&ndash;&gt;-->
+<!--            &lt;!&ndash;                android:layout_marginLeft="8dp"&ndash;&gt;-->
+<!--            &lt;!&ndash;                android:layout_height="wrap_content">&ndash;&gt;-->
+
+<!--            &lt;!&ndash;            </TextView>&ndash;&gt;-->
+
+<!--            <RelativeLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent">-->
+
+
+<!--                <TextView-->
+<!--                    android:id="@+id/dueDate"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_alignParentRight="true"-->
+<!--                    android:layout_marginTop="12dp"-->
+
+<!--                    android:textSize="20dp">-->
+
+<!--                </TextView>-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/finishDate"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_alignParentRight="true"-->
+<!--                    android:layout_marginTop="40dp"-->
+<!--                    android:layout_marginRight="29dp"-->
+<!--                    android:text="Finish date"-->
+<!--                    android:textSize="18dp">-->
+
+<!--                </TextView>-->
+<!--            </RelativeLayout>-->
+
+<!--        </LinearLayout>-->
+
+<!--    </LinearLayout>-->
+
+<!--</androidx.cardview.widget.CardView>-->
+<!--    <androidx.cardview.widget.CardView-->
+<!--        android:id="@+id/card2"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_marginRight="30dp"-->
+<!--        android:layout_marginTop="30dp"-->
+<!--        android:layout_marginLeft="30dp"-->
+<!--        app:cardCornerRadius="8dp"-->
+<!--        android:clickable="true"-->
+<!--        android:layout_height="200dp">-->
+
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:orientation="vertical"-->
+
+<!--            android:layout_height="match_parent">-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:orientation="horizontal"-->
+<!--                android:layout_marginLeft="30dp"-->
+<!--                android:layout_marginTop="20dp"-->
+<!--                android:layout_marginRight="30dp"-->
+<!--                android:layout_height="wrap_content">-->
+
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:orientation="vertical"-->
+<!--                    android:layout_height="wrap_content">-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/responsiblePerson1"-->
+<!--                        android:textSize="24dp"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:text="Responsible person"-->
+<!--                        android:layout_height="wrap_content">-->
+
+<!--                    </TextView>-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/center1"-->
+<!--                        android:textSize="20dp"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:text="Center"-->
+<!--                        android:layout_height="wrap_content">-->
+
+<!--                    </TextView>-->
+<!--                    <TextView-->
+<!--                        android:id="@+id/priority1"-->
+<!--                        android:textSize="18dp"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:text="Priority"-->
+<!--                        android:layout_marginTop="9dp"-->
+<!--                        android:layout_height="wrap_content">-->
+
+<!--                    </TextView>-->
+
+<!--                </LinearLayout>-->
+
+
+
+<!--                <RelativeLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent">-->
+
+<!--                    <ImageView-->
+<!--                        android:layout_width="30dp"-->
+<!--                        android:layout_height="40dp"-->
+
+<!--                        android:layout_alignParentTop="true"-->
+<!--                        android:layout_alignParentEnd="true"-->
+
+<!--                        android:layout_marginEnd="11dp"-->
+<!--                        android:src="@drawable/downloadsww">-->
+
+<!--                    </ImageView>-->
+
+<!--                </RelativeLayout>-->
+
+<!--            </LinearLayout>-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="292dp"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:layout_marginLeft="30dp"-->
+<!--                android:layout_marginTop="5dp"-->
+<!--                android:layout_marginRight="30dp"-->
+<!--                android:orientation="horizontal">-->
+
+<!--                &lt;!&ndash;            <TextView&ndash;&gt;-->
+<!--                &lt;!&ndash;                android:id="@+id/progress"&ndash;&gt;-->
+<!--                &lt;!&ndash;                android:layout_width="wrap_content"&ndash;&gt;-->
+<!--                &lt;!&ndash;                android:text="8"&ndash;&gt;-->
+<!--                &lt;!&ndash;                android:textSize="40dp"&ndash;&gt;-->
+<!--                &lt;!&ndash;                android:layout_height="wrap_content">&ndash;&gt;-->
+<!--                &lt;!&ndash;            </TextView>&ndash;&gt;-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:orientation="vertical">-->
+
+
+<!--                    &lt;!&ndash;                <ImageView&ndash;&gt;-->
+<!--                    &lt;!&ndash;                    android:layout_width="20dp"&ndash;&gt;-->
+<!--                    &lt;!&ndash;                    android:layout_marginTop="4dp"&ndash;&gt;-->
+<!--                    &lt;!&ndash;                    android:src="@drawable/downloadsww"&ndash;&gt;-->
+<!--                    &lt;!&ndash;                    android:layout_height="14dp">&ndash;&gt;-->
+
+<!--                    &lt;!&ndash;                </ImageView>&ndash;&gt;-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/type1"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+
+<!--                        android:layout_marginTop="4dp"-->
+<!--                        android:text="Type"-->
+<!--                        android:textSize="18dp">-->
+
+<!--                    </TextView>-->
+
+<!--                    <TextView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginTop="9dp"-->
+<!--                        android:text="Status"-->
+<!--                        android:id="@+id/status1"-->
+<!--                        android:textSize="18dp">-->
+
+<!--                    </TextView>-->
+<!--                </LinearLayout>-->
+<!--                &lt;!&ndash;            <TextView&ndash;&gt;-->
+<!--                &lt;!&ndash;                android:layout_width="wrap_content"&ndash;&gt;-->
+<!--                &lt;!&ndash;                android:text="0 %"&ndash;&gt;-->
+<!--                &lt;!&ndash;                android:layout_marginTop="-4dp"&ndash;&gt;-->
+<!--                &lt;!&ndash;                android:layout_marginLeft="8dp"&ndash;&gt;-->
+<!--                &lt;!&ndash;                android:layout_height="wrap_content">&ndash;&gt;-->
+
+<!--                &lt;!&ndash;            </TextView>&ndash;&gt;-->
+
+<!--                <RelativeLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent">-->
+
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/dueDate1"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_alignParentRight="true"-->
+<!--                        android:layout_marginTop="12dp"-->
+
+<!--                        android:textSize="20dp">-->
+
+<!--                    </TextView>-->
+
+<!--                    <TextView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_alignParentRight="true"-->
+<!--                        android:layout_marginTop="40dp"-->
+<!--                        android:layout_marginRight="33dp"-->
+<!--                        android:id="@+id/finishDate1"-->
+<!--                        android:text="Finish date"-->
+<!--                        android:textSize="18dp">-->
+
+<!--                    </TextView>-->
+<!--                </RelativeLayout>-->
+
+<!--            </LinearLayout>-->
+
+<!--        </LinearLayout>-->
+
+<!--    </androidx.cardview.widget.CardView>-->
+<!--    <androidx.cardview.widget.CardView-->
+
+
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_marginRight="30dp"-->
+<!--        android:layout_marginTop="30dp"-->
+<!--        android:layout_marginLeft="30dp"-->
+<!--        app:cardCornerRadius="8dp"-->
+<!--        android:layout_height="200dp">-->
+
+
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:orientation="vertical"-->
+<!--            android:layout_height="match_parent">-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:orientation="horizontal"-->
+<!--                android:layout_marginLeft="30dp"-->
+<!--                android:layout_marginTop="20dp"-->
+<!--                android:layout_marginRight="30dp"-->
+<!--                android:layout_height="wrap_content">-->
+
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:orientation="vertical"-->
+<!--                    android:layout_height="wrap_content">-->
+
+<!--                    <TextView-->
+
+<!--                        android:textSize="24dp"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:text="Princess"-->
+<!--                        android:layout_height="wrap_content">-->
+
+<!--                    </TextView>-->
+
+<!--                    <TextView-->
+<!--                        android:text="300"-->
+<!--                        android:textSize="24dp"-->
+<!--                        android:layout_width="wrap_content"-->
+
+<!--                        android:layout_height="wrap_content">-->
+
+<!--                    </TextView>-->
+<!--                    <TextView-->
+<!--                        android:textSize="16dp"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:text="Location"-->
+
+<!--                        android:layout_height="wrap_content">-->
+
+<!--                    </TextView>-->
+
+<!--                </LinearLayout>-->
+
+
+
+<!--                <RelativeLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent">-->
+
+<!--                    <ImageView-->
+<!--                        android:layout_width="30dp"-->
+<!--                        android:layout_height="40dp"-->
+
+<!--                        android:src="@drawable/downloadsww">-->
+
+<!--                    </ImageView>-->
+
+<!--                </RelativeLayout>-->
+
+<!--            </LinearLayout>-->
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:layout_marginLeft="30dp"-->
+<!--                android:layout_marginTop="20dp"-->
+<!--                android:orientation="horizontal"-->
+<!--                android:layout_marginRight="30dp"-->
+<!--                >-->
+
+<!--                <TextView-->
+<!--                    android:text="55"-->
+<!--                    android:layout_width="wrap_content"-->
+
+<!--                    android:textSize="40dp"-->
+<!--                    android:layout_height="wrap_content">-->
+<!--                </TextView>-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:orientation="vertical"-->
+<!--                    android:layout_height="wrap_content">-->
+
+
+<!--                    <TextView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:text="%"-->
+<!--                        android:layout_marginTop="4dp"-->
+<!--                        android:layout_marginLeft="6dp"-->
+<!--                        android:layout_height="wrap_content">-->
+<!--                    </TextView>-->
+
+<!--                    &lt;!&ndash;                <ImageView&ndash;&gt;-->
+<!--                    &lt;!&ndash;                    android:layout_width="20dp"&ndash;&gt;-->
+<!--                    &lt;!&ndash;                    android:layout_marginTop="4dp"&ndash;&gt;-->
+<!--                    &lt;!&ndash;                    android:src="@drawable/downloadsww"&ndash;&gt;-->
+<!--                    &lt;!&ndash;                    android:layout_height="14dp">&ndash;&gt;-->
+
+<!--                    &lt;!&ndash;                </ImageView>&ndash;&gt;-->
+<!--                    <TextView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:text="progress"-->
+<!--                        android:layout_height="wrap_content">-->
+
+<!--                    </TextView>-->
+<!--                </LinearLayout>-->
+<!--                &lt;!&ndash;            <TextView&ndash;&gt;-->
+<!--                &lt;!&ndash;                android:layout_width="wrap_content"&ndash;&gt;-->
+<!--                &lt;!&ndash;                android:text="0 %"&ndash;&gt;-->
+<!--                &lt;!&ndash;                android:layout_marginTop="-4dp"&ndash;&gt;-->
+<!--                &lt;!&ndash;                android:layout_marginLeft="8dp"&ndash;&gt;-->
+<!--                &lt;!&ndash;                android:layout_height="wrap_content">&ndash;&gt;-->
+
+<!--                &lt;!&ndash;            </TextView>&ndash;&gt;-->
+
+<!--                <RelativeLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent">-->
+
+
+<!--                    <TextView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_alignParentRight="true"-->
+<!--                        android:layout_marginTop="12dp"-->
+<!--                        android:text="2022-07-21"-->
+
+<!--                        android:textSize="20dp">-->
+
+<!--                    </TextView>-->
+<!--                </RelativeLayout>-->
+
+<!--            </LinearLayout>-->
+
+<!--        </LinearLayout>-->
+
+<!--    </androidx.cardview.widget.CardView>-->
+
+
+<!--    <Button-->
+<!--        android:id="@+id/button4"-->
+<!--        android:layout_width="336dp"-->
+<!--        android:layout_height="60dp"-->
+<!--        android:layout_alignParentTop="true"-->
+<!--        android:layout_alignParentEnd="true"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:layout_marginTop="72dp"-->
+<!--        android:layout_marginEnd="37dp"-->
+
+<!--        android:text="Get Data"-->
+<!--        tools:layout_editor_absoluteX="41dp"-->
+<!--        tools:layout_editor_absoluteY="44dp" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/textView12"-->
+<!--        android:layout_width="63dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_alignParentStart="true"-->
+<!--        android:layout_alignParentTop="true"-->
+<!--        android:layout_alignParentEnd="true"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:layout_marginStart="175dp"-->
+<!--        android:layout_marginTop="223dp"-->
+<!--        android:layout_marginEnd="172dp"-->
+
+<!--        android:text="TextView" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/textView13"-->
+<!--        android:layout_width="63dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_alignParentStart="true"-->
+<!--        android:layout_alignParentTop="true"-->
+<!--        android:layout_alignParentEnd="true"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:layout_marginStart="172dp"-->
+<!--        android:layout_marginTop="313dp"-->
+<!--        android:layout_marginEnd="175dp"-->
+
+<!--        android:text="TextView" />-->
+
+<!--    <ListView-->
+<!--        android:id="@+id/listview1"-->
+<!--        android:layout_width="347dp"-->
+<!--        android:layout_height="415dp"-->
+<!--        android:layout_alignParentStart="true"-->
+<!--        android:layout_alignParentTop="true"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:layout_marginStart="34dp"-->
+<!--        android:layout_marginTop="153dp" />-->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="-3dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Your Workorders"
+            android:textSize="25dp"
+            android:gravity="center">
+
+        </TextView>
+    </androidx.appcompat.widget.Toolbar>
+
+    <FrameLayout
+        android:id="@+id/flFragment"
+        android:layout_width="413dp"
+        android:layout_height="529dp"
+        app:layout_constraintBottom_toTopOf="@+id/navigation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.726" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/bottom_nav_manu" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

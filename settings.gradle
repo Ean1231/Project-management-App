@@ -1,0 +1,23 @@
+dependencyResolutionManagement {
+//    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositoriesMode.set(RepositoriesMode.PREFER_SETTINGS)
+    repositories {
+        google()
+        mavenCentral()
+        //jcenter() Warning: this repository is going to shut down soon
+//        maven { url 'https://jitpack.io' }
+        maven {
+
+            url = "http://neuroph.sourceforge.net/maven2/"
+            url 'https://esri.jfrog.io/artifactory/arcgis'
+
+        }
+    }
+}
+rootProject.name = "PimoScanner"
+include ':app'
+include ':scanlibrary'
+//include ':SaverSample'
+//include ':PickerSample'
+//include ':OneDriveSDKTests'
+//include ':OneDriveSDK'

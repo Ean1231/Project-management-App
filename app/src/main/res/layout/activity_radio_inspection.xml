@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RadioInspection">
+
+
+    <!--       <TextView-->
+<!--           android:layout_width="wrap_content"-->
+<!--           android:layout_height="wrap_content"-->
+<!--           android:text="Questions: 1/n"-->
+<!--           android:textColor="@color/black"-->
+<!--           android:textSize="17sp"-->
+<!--           android:id="@+id/textQuestionNo"-->
+<!--           ></TextView>-->
+
+<!--       <TextView-->
+<!--           android:layout_width="wrap_content"-->
+<!--           android:layout_height="wrap_content"-->
+<!--           android:text="Score: 0"-->
+<!--           android:layout_below="@+id/textQuestionNo"-->
+<!--           android:textSize="17sp"-->
+<!--           android:layout_marginTop="5dp"-->
+<!--           android:id="@+id/textScore"-->
+<!--           ></TextView>-->
+
+<!--       <TextView-->
+<!--           android:id="@+id/textTimer"-->
+<!--           android:layout_width="wrap_content"-->
+<!--           android:layout_height="wrap_content"-->
+<!--           android:layout_alignParentEnd="true"-->
+<!--           android:text="00:20"-->
+<!--           android:textColor="@color/black"-->
+<!--           android:textSize="37sp"></TextView>-->
+
+
+<!--    <com.google.android.material.floatingactionbutton.FloatingActionButton-->
+<!--        android:id="@+id/saveImage"-->
+<!--        android:layout_width="64dp"-->
+<!--        android:layout_height="56dp"-->
+<!--        android:layout_alignParentStart="true"-->
+<!--        android:layout_alignParentEnd="true"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:background="@drawable/btn_bg"-->
+<!--        android:src="@drawable/ic_backarrow"-->
+<!--        android:textColor="@color/white"-->
+<!--        app:backgroundTint="@color/Pimo_green"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.028"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintVertical_bias="0.026"-->
+<!--        tools:ignore="MissingConstraints" />-->
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="412dp"
+        android:layout_height="55dp"
+        android:background="?attr/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="-3dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:gravity="center"
+            android:text="5.BUILDING/ STRUCTURAL ELEMENTS"
+            android:textSize="20dp">
+
+        </TextView>
+    </androidx.appcompat.widget.Toolbar>
+
+    <Button
+        android:id="@+id/btnPrevious"
+        android:layout_width="83dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/radioGroup"
+        android:layout_alignParentStart="true"
+        android:background="@drawable/nextprev"
+        android:backgroundTint="@color/Pimo_green"
+        android:text="prev"
+        android:textColor="@color/white"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.116"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.965">
+
+    </Button>
+
+
+    <TextView
+        android:id="@+id/textQuestion"
+        android:layout_width="400dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="8dp"
+        android:text="Sub Element here"
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_green_dark"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.234">
+
+    </TextView>
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.4">
+
+        <RadioButton
+            android:id="@+id/rb1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="C1"
+            android:textSize="20sp"></RadioButton>
+
+        <RadioButton
+            android:id="@+id/rb2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="C2"
+            android:textSize="20sp"></RadioButton>
+
+        <RadioButton
+            android:id="@+id/rb3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="C3"
+            android:textSize="20sp"></RadioButton>
+
+        <RadioButton
+            android:id="@+id/rb4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="C4"
+            android:textSize="20sp"></RadioButton>
+
+        <RadioButton
+            android:id="@+id/rb5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="C5"
+            android:textSize="20sp"></RadioButton>
+
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/comment"
+        android:layout_width="336dp"
+        android:layout_height="74dp"
+        android:layout_below="@+id/radioGroup"
+        android:layout_alignParentStart="true"
+        android:hint="comment"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.56"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.652"></EditText>
+
+    <Button
+        android:id="@+id/btnNext"
+        android:layout_width="78dp"
+        android:layout_height="38dp"
+        android:layout_below="@+id/radioGroup"
+        android:layout_alignParentStart="true"
+        android:background="@drawable/nextprev"
+        android:backgroundTint="@color/Pimo_green"
+
+        android:text="Next"
+        android:textColor="@color/white"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.9"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.964"></Button>
+
+    <Button
+        android:id="@+id/camBtn"
+        android:layout_width="70dp"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/nextprev"
+        android:text="cam"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.54"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.965">
+
+    </Button>
+
+    <ImageView
+        android:id="@+id/mImageView"
+        android:layout_width="97dp"
+        android:layout_height="88dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.838" />
+
+<!--    <TextView-->
+<!--        android:id="@+id/textView8"-->
+<!--        android:layout_width="390dp"-->
+<!--        android:layout_height="33dp"-->
+<!--        android:text="5.BUILDING/ STRUCTURAL ELEMENTS "-->
+<!--        android:textColor="@color/black"-->
+<!--        android:textSize="21dp"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.476"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintVertical_bias="0.158" />-->
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

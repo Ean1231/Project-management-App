@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Checklist">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Number of questions"
+        android:textAllCaps="false"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:layout_marginTop="50dp"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:id="@+id/idTVQuestionAttemped"
+        ></TextView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/idTVQuestion"
+        android:layout_below="@+id/idTVQuestionAttemped"
+        android:layout_marginTop="30dp"
+        android:text="Question"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:textSize="25sp"
+        android:textColor="@color/black"
+        >
+    </TextView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/idTVQuestion"
+        android:orientation="vertical"
+        android:layout_marginTop="50dp"
+        >
+        <!--C1-->
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:padding="4dp"
+            android:text="C1"
+            android:textAllCaps="false"
+            android:id="@+id/idbtnoption1"
+            android:background="@color/Pimo_green"
+            >
+
+        </Button>
+
+        <!--C2-->
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:padding="4dp"
+            android:text="C2"
+            android:textAllCaps="false"
+            android:id="@+id/idbtnoption2"
+            android:background="@color/Pimo_green"
+            >
+
+        </Button>
+        <!--C3-->
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:padding="4dp"
+            android:text="C3"
+            android:textAllCaps="false"
+            android:id="@+id/idbtnoption3"
+            android:background="@color/Pimo_green"
+            >
+
+        </Button>
+        <!--C4-->
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:padding="4dp"
+            android:text="C4"
+            android:textAllCaps="false"
+            android:id="@+id/idbtnoption4"
+            android:background="@color/Pimo_green"
+            >
+
+        </Button>
+        <!--C5-->
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:padding="4dp"
+            android:text="C5"
+            android:textAllCaps="false"
+            android:id="@+id/idbtnoption5"
+            android:background="@color/Pimo_green"
+            >
+
+        </Button>
+    </LinearLayout>
+
+</RelativeLayout>

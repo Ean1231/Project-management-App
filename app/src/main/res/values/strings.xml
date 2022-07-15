@@ -1,0 +1,236 @@
+<resources>
+    <string name="app_name">ECDPW</string>
+    <string name="title_activity_homepage">homepage</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="camera">Camera</string>
+    <string name="gallery">Gallery</string>
+
+    <string name="elevation_image_service">http://service8.arcgis.com/FPWWjHkuL5UKm96f/ArcGIS/rest/services/KenyaCounties/FeatureServer/0</string>
+    <string-array name="usertype">
+        <item>Select Role</item>
+        <item>ICT</item>
+        <item>Electrical</item>
+    </string-array>
+
+
+    <string name="viewshed_service">
+        https://sampleserver6.arcgisonline.com/arcgis/rest/services/Elevation/ESRI_Elevation_World/GPServer/Viewshed
+    </string>
+
+    <string name="location_permission_denied">LocationDisplayManager cannot run because location permission was denied.</string>
+    <string name="search_hint">Enter POI</string>
+    <string name="proximity_search_hint">In proximity of…</string>
+    <string name="searching_by_area">Searching by area…</string>
+    <string name="redo_search_text">Redo search in this area</string>
+
+    <string name="address_search_hint">Enter address</string>
+    <string name="geo_locate_error">Geocode failed on address.</string>
+    <string name="location_not_found">No location with that name: </string>
+
+    <!-- Navigation vector URL-->
+    <string name="navigation_vector">https://www.arcgis.com/sharing/rest/content/items/dcbbba0edf094eaa81af19298b9c6247/resources/styles/root.json</string>
+    <string name="routing_service">https://sampleserver6.arcgisonline.com/arcgis/rest/services/NetworkAnalysis/SanDiego/NAServer/Route</string>
+    <!-- Drawer strings-->
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+
+    <string name="progress_title">Finding Route</string>
+    <string name="progress_message">Please wait&#8230;</string>
+
+
+    <string name="world_cities_service_0">https://sampleserver6.arcgisonline.com/arcgis/rest/services/SampleWorldCities/MapServer/0
+    </string>
+    <string name="only_cities_in_current_extent">Only cities in current extent</string>
+    <string name="only_cities_greater_than_5m">Only cities greater than 5M</string>
+    <string name="get_statistics">Get Statistics</string>
+
+
+    <!--https://gis.ecdpw.gov.za    Client_ID`s===>     GWtFT8WbvMk6d0GJ<==Mind           lgAdHkYZYlwwfAhC<===samples             ====QCw9bWpIvyO15ZNT-->
+    <string name="portal_url">https://www.arcgis.com/</string>
+    <string name="webmap_world_traffic_id">1df846f041644398bbf4a06d5d8a277d</string>
+    <string name="oauth_client_id">QCw9bWpIvyO15ZNT</string>
+    <string name="oauth_redirect_host">auth</string>
+    <!--My redirect URL    https://testtserver.esri.arcgis.com    ,, sample===>authenticate-with-oauth -->
+    <string name="oauth_redirect_uri">authenticate-with-oauth</string>
+
+    <!--https://gis.ecdpw.gov.za/portal/apps/sites/#/site-->
+    <string name="arcgis_online_portal_url">https://www.arcgis.com/</string>
+    <string name="map_service_world_traffic_id">e5039444ef3c48b8a8fdc9227f9be7c1</string>
+
+
+    <string name="basemap_selection">Choose a basemap</string>
+    <string name="layer_selection">Add operational layers</string>
+    <string name="title">Title</string>
+    <string name="tags">Tags</string>
+
+    <!-- App messages -->
+    <string name="description">Description</string>
+    <string name="unsupported_option">Unsupported option</string>
+    <string name="cancel">Cancel</string>
+    <string name="save_map">Save Map</string>
+    <string name="enter_tags_separated_by_commas">Enter tags separated by commas</string>
+    <string name="enter_description">Enter description</string>
+    <string name="enter_title">Enter title</string>
+    <!-- Basemap choice array -->
+
+    <string-array name="basemap_array">
+        <item>Streets</item>
+        <item>Imagery</item>
+        <item>Topographic</item>
+        <item>Oceans</item>
+    </string-array>
+    <!-- Operational layer array -->
+    <string-array name="operational_layer_array">
+        <item>World Time Zones</item>
+        <item>Census</item>
+    </string-array>
+
+
+    <string name="service_layer_url">https://services7.arcgis.com/H7dxHguUS0vPnXcn/ArcGIS/rest/services/my_points/FeatureServer</string>
+    <string name="feature_added">Feature successfully added</string>
+
+    <string name="error_cannot_add_to_feature_table">Cannot add a feature to this feature table</string>
+    <string name="error_applying_edits">Exception applying edits on server: %s</string>
+
+
+    <!-- Progress dialog messages -->
+
+
+    <!-- Sample Strings -->
+    <string name="sample_service_url">https://sampleserver6.arcgisonline.com/arcgis/rest/services/DamageAssessment/FeatureServer</string>
+    <string name="el_police_stn">https://services7.arcgis.com/H7dxHguUS0vPnXcn/ArcGIS/rest/services/east_london_police_stn/FeatureServer</string>
+
+    <string-array name="damage_types">
+        <item>Destroyed</item>
+        <item>Major</item>
+        <item>Minor</item>
+        <item>Affected</item>
+        <item>Inaccessible</item>
+    </string-array>
+
+    <string name="geodatabase_action_button_text">Generate geodatabase</string>
+    <string name="sync_geodatabase_button_text">Sync geodatabase</string>
+
+    <string name="username">YOUR_PORTAL_USERNAME</string>
+    <string name="password">YOUR_PORTAL_PASSWORD</string>
+    <string name="testPartialName">vo</string>
+
+    <!-- TODO: add your OAuth Client ID here-->
+    <!--    <string name="client_id">QCw9bWpIvyO15ZNT</string>-->
+    <!--    &lt;!&ndash; This redirect URI is the default value for https://www.arcgis.com &ndash;&gt;-->
+    <!--    <string name="redirect_uri">authenticate-with-oauth://auth</string>-->
+
+    <!-- The following values are used in the Robotium tests only -->
+
+
+    <string name="basemap_thumbnail">basemap thumbnail</string>
+
+    <!-- navigation drawer -->
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="my_maps">View Maps</string>
+    <string name="sign_out">Sign Out</string>
+    <string name="sign_in">Sign In</string>
+    <string name="edit_mmap">Edit maps</string>
+
+    <!-- sign in activity -->
+    <string name="title_sign_in_activity">Sign In</string>
+    <string name="specify_portal_url">Specify the URL to your organization or your ArcGIS portal</string>
+    <string name="continue_label">Continue</string>
+    <string name="verifying_portal">Verifying portal</string>
+    <string name="portal_url_hint">http://www.arcgis.com</string>
+    <string name="failed_sign_in">Failed to sign in.</string>
+
+    <!-- content browser -->
+    <string name="fetching_maps">Fetching maps</string>
+    <string name="refresh">Refresh</string>
+    <string name="no_maps">No maps</string>
+
+    <!-- webmap urls -->
+    <string name="default_basemap_url">http://www.arcgis.com/home/item.html?id=d5e02a0c1f2b4ec399823fdd3c2fdebd</string>
+
+    <!-- geocode service -->
+    <string name="geocode_url">http://geocode.arcgis.com/arcgis/rest/services/World/GeocodeServer</string>
+
+    <!-- route service -->
+    <string name="routingservice_url">https://route.arcgis.com/arcgis/rest/services/World/Route/NAServer/Route_World/</string>
+
+    <!-- place search hint -->
+    <string name="address">Place name or address</string>
+
+    <!-- action bar titles -->
+    <string name="menu_basemaps">Switch Basemap</string>
+    <string name="action_location">Toggle Location Tracking</string>
+    <string name="action_measure">Measure</string>
+    <string name="Edit_Map">Edit</string>
+
+    <!-- directions button text -->
+    <string name="get_route">Get Route</string>
+
+    <!-- location search hint -->
+    <string name="my_location">My Location</string>
+    <string name="need_location_fix">Need a location fix before \'My Location\' can be used</string>
+    <string name="suggestion_text">Suggestion</string>
+
+    <!-- dialog titles -->
+    <string name="title_basemaps_dialog">Select Base Map</string>
+    <string name="title_routing_dialog">Routing</string>
+    <string name="title_directions_dialog">Driving Directions</string>
+
+    <!-- progress dialog messages -->
+    <string name="fetching_basemap">Fetching Basemap</string>
+    <string name="fetching_basemaps">Fetching Basemap Gallery</string>
+    <string name="fetching_selected_basemap">Fetching Selected Basemap</string>
+    <string name="address_search">Searching for Address</string>
+    <string name="route_search">Searching for Route</string>
+    <string name="reverse_geocoding">Reverse Geocoding</string>
+    <string name="basemapSearchFailed">Basemap search failed</string>
+    <string name="routingFailed">Routing task failed</string>
+    <string name="addressSearchFailed">Address search failed</string>
+    <string name="noResultsFound">No results found</string>
+    <string name="route_time">Time</string>
+    <string name="route_distance">Distance</string>
+    <string name="swap_addresses">Interchange the addresses</string>
+    <string name="routing_title">Routing</string>
+    <string name="clearText">Clear Text</string>
+
+    <!-- Routing Dialog Fragment -->
+    <string name="to">TO </string>
+    <string name="from">FROM </string>
+
+    <!-- ImageView content Descriptions -->
+    <string name="icon_for_searchResult">Icon indicating Search</string>
+    <string name="icon_for_directions_and_routing">Get Directions or Get Route</string>
+    <string name="icon_cancel">Remove the current search</string>
+    <string name="icon_clock">Display the clock</string>
+    <string name="suggest_item_icon">Suggest item icon</string>
+    <string name="directions_maneuver">directions maneuver</string>
+    <string name="drawer_time_icon">drawer item icon</string>
+    <string name="route_overview_symbol">route overview symbol</string>
+
+    <!-- floating action button -->
+    <string name="imagebutton_content_desc">Turn GPS on/off</string>
+
+    <!-- Toast/alert  strings-->
+    <string name="location_tracking_off">Location tracking is required for this app.  Do you want modify the location options?</string>
+    <string name="wireless_off">An internet connection is needed for this app. Do you want to modify the wireless settings?</string>
+    <string name="open_location_options">Yes</string>
+    <string name="icon_for_navigation_menue" />
+    <string name="no_route_found">No route could be found</string>
+    <string name="location_not_foud">We\'re sorry, we couldn\'t find a location with the name</string>
+    <string name="signin">Sign In</string>
+    <string name="switch_basemap">Switch Basemap</string>
+    <string name="search">Search</string>
+    <string name="usernameLabel">Username</string>
+    <string name="passwordLabel">Password</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

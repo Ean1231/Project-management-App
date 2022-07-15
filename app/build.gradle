@@ -1,0 +1,147 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/license.txt'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/NOTICE.txt'
+        exclude 'META-INF/notice.txt'
+        exclude 'META-INF/ASL2.0'
+        exclude("META-INF/*.kotlin_module")
+        exclude 'META-INF/LGPL2.1'
+    }
+    useLibrary 'org.apache.http.legacy'
+    compileSdk 32
+    buildToolsVersion '32.1.0 rc1'
+    defaultConfig {
+        applicationId "com.example.pimoscanner"
+        minSdk 23
+        API_KEY = "AAPK1b385da89ae54ee996a0763fb86e3268eJ1-WYMwyYBzzZ1UAdMTYwDSUTfZ7r12Smbhu06fgdtCnt__XwU4TmcQLBjtgmbU"
+        targetSdk 32
+        versionCode 1
+        versionName "1.0"
+        multiDexEnabled true
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+//        buildConfigField("String", "API_KEY", "AAPK1b385da89ae54ee996a0763fb86e3268eJ1-WYMwyYBzzZ1UAdMTYwDSUTfZ7r12Smbhu06fgdtCnt__XwU4TmcQLBjtgmbU")
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    buildFeatures {
+        viewBinding true
+    }
+    compileSdkVersion 32
+    packagingOptions {
+        jniLibs {
+            pickFirsts += ['META-INF/*']
+        }
+        resources {
+//            pickFirsts += ['META-INF/*']
+        }
+    }
+
+}
+
+dependencies {
+    implementation 'androidx.appcompat:appcompat:1.4.1'
+    implementation 'com.google.android.material:material:1.5.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.3'
+    implementation 'androidx.appcompat:appcompat:1.4.1'
+    implementation project(path: ':scanlibrary')
+    implementation 'androidx.navigation:navigation-fragment:2.4.0'
+    implementation 'androidx.navigation:navigation-ui:2.4.0'
+    implementation fileTree(dir: 'C:\\Users\\Ean Bosman\\Desktop\\AppPimoScanner\\latest2\\PimoScanner\\app\\libs', include: ['*.aar', '*.jar'], exclude: [])
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'androidx.drawerlayout:drawerlayout:1.1.1'
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.3'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    implementation project(':scanlibrary')
+//    implementation files('libs/json-20150729.jar')
+    implementation group: 'org.json', name: 'json', version: '20171018'
+    implementation 'com.google.android.gms:play-services-location:19.0.1'
+//    Implementtation 'org.jbundle.util.osgi.wrapped:org.jbundle.util.osgi.wrapped.org.apache.http.client:4.1.2'
+//    implementation group: 'com.microsoft.add', name: 'adal', version: '1.0.5'
+    implementation 'com.google.android.gms:play-services-location:19.0.1'
+
+    implementation 'com.squareup.picasso:picasso:2.71828'
+    implementation "com.android.support:appcompat-v7:25.3.1"
+    implementation "com.android.support:recyclerview-v7:25.3.1"
+
+    //Signature
+    implementation 'com.github.gcacace:signature-pad:1.3.1'
+
+    implementation 'com.esri.arcgisruntime:arcgis-android:100.14.0'
+//    implementation 'com.esri.arcgisruntime:arcgis-android-toolkit:100.13.0'
+    implementation 'com.google.code.gson:gson:2.8.8'
+    implementation 'androidx.browser:browser:1.3.0'
+    implementation 'androidx.localbroadcastmanager:localbroadcastmanager:1.0.0'
+    implementation 'org.apache.httpcomponents.core5:httpcore5:5.0.4'
+    implementation 'org.apache.httpcomponents.core5:httpcore5-h2:5.0.4'
+    implementation 'org.slf4j:slf4j-api:1.7.32'
+    implementation 'commons-codec:commons-codec:1.15'
+    implementation 'org.conscrypt:conscrypt-openjdk-uber:2.2.1'
+    implementation 'net.spy:spymemcached:2.12.3'
+    implementation 'org.ehcache.modules:ehcache-api:3.4.0'
+    implementation 'com.google.android.material:material:1.0.0'
+    implementation 'com.android.support:cardview-v7:28.0.0'
+
+    implementation 'com.google.ar.sceneform:core:1.7.0'
+    implementation 'com.google.ar.sceneform.ux:sceneform-ux:1.7.0'
+    implementation 'com.google.ar.sceneform:assets:1.7.0'
+
+    implementation 'com.itextpdf:itextg:5.5.10'
+    implementation 'com.jakewharton:butterknife:8.0.0'
+
+    implementation 'com.google.android.material:material:1.1.0'
+//    implementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+//
+//    implementation 'com.squareup.retrofit2:converter-gson:2.3.0'
+//    implementation 'com.squareup.retrofit2:retrofit:2.3.0'
+//    implementation 'com.squareup.okhttp3:logging-interceptor:3.8.0'
+//    implementation 'com.squareup.okhttp:okhttp:3.3.1'
+//    implementation 'com.google.code.gson:gson:2.8.0'
+//
+//    implementation "android.arch.persistence.room:runtime:1.1.1"
+//    implementation "android.arch.persistence.room:compiler:1.1.1"
+//    androidTestImplementation "android.arch.persistence.room:testing:1.1.1"
+//
+//    implementation "android.arch.lifecycle:extensions:1.1.1"
+//    implementation "android.arch.lifecycle:viewmodel:1.1.1"
+//    implementation "android.arch.lifecycle:livedata:1.1.1"
+//    annotationProcessor "android.arch.lifecycle:compiler:1.1.1"
+//    implementation 'net.sourceforge.jtds:jtds:1.3.1'
+
+//  implementation project(':OneDriveSDK')
+    implementation platform('com.google.firebase:firebase-bom:30.0.1')
+
+    // Declare the dependency for the Realtime Database library
+    // When using the BoM, you don't specify versions in Firebase library dependencies
+    implementation 'com.google.firebase:firebase-database'
+
+}
+
+task apiKey {
+    def apiKeyFile = new File("${System.properties.getProperty("user.home")}/.gradle/gradle.properties")
+    if (!apiKeyFile.exists()) {
+        print("Go to " + new URL("https://developers.arcgis.com/dashboard/") + " to get an API key.")
+        print("Add your API Key to ${System.properties.getProperty("user.home")}\\.gradle\\gradle.properties.")
+        String apiKeyFileContents = "API_KEY = pZDI3WZ0tBzbaQU-BA1YAYXkoUJ0Ndd3ZS2VXw6nLzcBK1ulAE7gsX6Tf6RZl8v6SZmSDyuUArgig9lq5uq7coAfonviARNsGJMlyat9eY-mh54hMcm8pv9tDb8PDOqtJRzVREIDHbhfq2PXGXfQCg.."
+        apiKeyFile.write(apiKeyFileContents)
+    }
+}
